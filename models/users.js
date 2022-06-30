@@ -4,7 +4,26 @@ const bcrypt = require('bcrypt');
 
 class User extends Model {}
 
-User.init()
+User.init(
+    {
+        id: {
+
+        },
+        username: {
+
+        },
+        password: {
+
+        },
+    },
+    {
+        sequelize,
+        timestamps: false,
+        freezeTableName: true,
+        underscored: true,
+        modelName: 'user',
+      }
+)
 
 
 
