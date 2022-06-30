@@ -7,8 +7,8 @@ if (process.env.JAWSDB_URL) {
   sequelize = new Sequelize(process.env.JAWSDB_URL);
 } else {
   sequelize = new Sequelize(
-    process.env.DATABASE_NAME,
-    process.env.DATABASE_USERNAME,
+    process.env.DB_NAME,
+    process.env.DB_USERNAME,
     '',
     {
       host: 'localhost',
