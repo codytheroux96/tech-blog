@@ -23,7 +23,8 @@ router.post('/', (req, res) => {
 router.put('/:id', (req, res) => {
     Post.update({
         title: req.body.title,
-        content: req.body.title,},
+        content: req.body.title,
+    },
         {
             where: {
                 id: req.params.id
