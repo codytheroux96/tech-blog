@@ -10,11 +10,11 @@ User.hasMany(Comment, {
     foreignKey: 'user_id'
 })
 
-Comment.belongsToMany(User,{
+Comment.belongsTo(User,{
     foreignKey: 'user_id'
 })
 
-Comment.belongsToMany(Post, {
+Comment.belongsTo(Post, {
     foreignKey: 'post_id'
 })
 
